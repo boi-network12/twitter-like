@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+# Social Media App
 
-1. Install dependencies
+Welcome to the Social Media App project! This app aims to provide a seamless and engaging social media experience with features similar to popular platforms. It includes a feed, messaging, notifications, search functionality, and user profiles, among other features.
+
+## Features
+
+- **Home Feed**: View and interact with posts from other users.
+- **Messages**: Send and receive messages in real-time.
+- **Notifications**: Stay updated with notifications for likes, comments, and other activities.
+- **Search**: Discover users, posts, and hashtags.
+- **Profile**: Manage your personal profile, including profile picture, bio, and posts.
+- **Additional Features**: To be determined based on user feedback and future updates.
+
+## Tech Stack
+
+- **Frontend**: React Native, Expo
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+- **Authentication**: Firebase
+- **State Management**: React Context API / Redux (if needed)
+- **Styling**: Custom themes for light and dark modes
+
+## Installation
+
+### Prerequisites
+
+- Node.js
+- Expo CLI
+- MongoDB (for local development or a cloud service)
+
+### Setup
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yourusername/social-media-app.git
+   cd social-media-app
+   ```
+
+2. **Install Dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Start the Development Server**
 
    ```bash
-    npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Setup the Backend**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   Navigate to the `server` directory and follow the backend setup instructions provided in `server/README.md`.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Configuration
 
-## Get a fresh project
+Update the following environment variables in your `.env` file:
 
-When you're ready, run:
+- `MONGO_URI` - Connection string for your MongoDB instance.
+- `FIREBASE_CONFIG` - Firebase configuration object for authentication and other services.
 
-```bash
-npm run reset-project
-```
+## Folder Structure
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- `app/` - Contains all React Native components and screens.
+- `components/` - Reusable components used throughout the app.
+- `context/` - Contains the `ThemeContext` and other context providers.
+- `api/` - API service functions for communicating with the backend.
+- `styles/` - Styling and theme files.
 
-## Learn more
+## Contributing
 
-To learn more about developing your project with Expo, look at the following resources:
+We welcome contributions from the community! If you’d like to contribute, please fork the repository and submit a pull request with your changes. Be sure to follow our coding guidelines and include tests for new features.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## License
 
-## Join the community
+This project is licensed under the [MIT License](LICENSE).
 
-Join our community of developers creating universal apps.
+## Contact
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+For any questions or feedback, feel free to open an issue on GitHub or contact me directly at [your-email@example.com].
+
+---
+
